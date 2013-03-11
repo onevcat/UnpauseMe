@@ -17,6 +17,8 @@ For example, you want to play an unpause-animation name "anim1" in gameObject, d
 `StartCoroutine( gameObject.animation.Play("anim1",true,() => Debug.Log("onComplete")));`
 You will get a chance to notified by a completion Action when the animation finished.
 
+### BE CAUSION. You have to add use StartCoroutine in calling this Play extension method, or the script will not work!
+
 3. For Particles
 For Legacy particles, add UnpauseParticleEmitter.cs as a component to the gameObject in which a Particle Emitter attached.
 And for Shuriken particles, add UnpauseParticleSystem.cs as a component to the gameObject in which a Particle System attached.
