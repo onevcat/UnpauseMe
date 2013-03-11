@@ -8,9 +8,9 @@ Use for make Unity3D animations and particles not pause when you set the Time.ti
 
 How to use:
 
-1. Download and add every thing to your project
+* Download and add every thing to your project
 
-2. For Unity3D animation:
+* For Unity3D animation:
 Start a coroutine with below method to play the animation to ignore timeScale:
 `Play(string clipName, bool ignoreTimeScale,Action onComplete)`
 For example, you want to play an unpause-animation name "anim1" in gameObject, do this 		
@@ -19,7 +19,7 @@ You will get a chance to notified by a completion Action when the animation fini
 
 ### BE CAUSION. You have to add use StartCoroutine in calling this Play extension method, or the script will not work!
 
-3. For Particles
+* For Particles
 For Legacy particles, add UnpauseParticleEmitter.cs as a component to the gameObject in which a Particle Emitter attached.
 And for Shuriken particles, add UnpauseParticleSystem.cs as a component to the gameObject in which a Particle System attached.
 Done.
